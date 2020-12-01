@@ -54,6 +54,7 @@ export const Player: React.FC<Props> = ({
               overflow: hidden;
               padding: 2px;
               z-index: 0;
+              color: red;
             }
 
             #progress {
