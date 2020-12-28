@@ -51,7 +51,7 @@ export const Player: React.FC<Props> = ({
               position: relative;
               width: 100%;
               max-width: 360px;
-              height: 4px;
+              height: 6px;
               margin: -1px;
               border: 1px solid #e1e4e8;
               border-radius: 4px;
@@ -145,7 +145,7 @@ export const Player: React.FC<Props> = ({
         }}
       >
         <Text style={{ width: '16px', marginRight: '16px' }} size="large" weight="bold">{ isPlaying ? '▶' : '' }</Text>
-        <img id="cover" src={cover ?? null} width="60" height="60" />
+        <img id="cover" src={cover ?? null} width="64" height="64" />
         <div
           style={{
             display: "flex",
@@ -158,7 +158,7 @@ export const Player: React.FC<Props> = ({
           <Text id="track" size="large" weight="bold" color={"suprcuprcolor"}>
             {`${track ?? ""} `.trim()}
           </Text>
-          <Text id="artist" size="default" color={!track ? "suprcuprcolor" : undefined}>
+          <Text id="artist" size="default" color={!track ? "suprcuprcolor" : undefined} style={{ color: "#ff0080" }}>
             {artist || "Nothing playing..."}
           </Text>
           {track && (
