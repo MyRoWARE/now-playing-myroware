@@ -25,13 +25,13 @@ export const Player: React.FC<Props> = ({
         {`
             .paused { 
               animation-play-state: paused !important;
-              background: #e1e4e8 !important;
+              background: #a4b1cd !important;
             }
 
             img:not([src]) {
               content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
               background: #FFF;
-              border: 1px solid #e1e4e8;
+              border: 1px solid #a4b1cd;
             }
 
             img {
@@ -63,7 +63,7 @@ export const Player: React.FC<Props> = ({
               width: 100%;
               height: 6px;
               transform-origin: left center;
-              background-color: #24292e;
+              background-color: #9fef00;
               animation: progress ${duration}ms linear;
               animation-delay: -${progress}ms;
             }
@@ -74,6 +74,7 @@ export const Player: React.FC<Props> = ({
             #cover {
               opacity: 0;
               animation: appear 300ms ease-out forwards;
+              color: #9fef00;
             }
 
             #track {
@@ -152,7 +153,7 @@ export const Player: React.FC<Props> = ({
           <Text id="track" weight="bold">
             {`${track ?? ""} `.trim()}
           </Text>
-          <Text id="artist" color={!track ? "gray" : undefined}>
+          <Text id="artist" color={!track ? "htbgreen" : undefined}>
             {artist || "Nothing playing..."}
           </Text>
           {track && (
