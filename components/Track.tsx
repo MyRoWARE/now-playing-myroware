@@ -65,10 +65,10 @@ export const Track: React.FC<Props> = ({
             marginLeft: 8,
           }}
         >
-          <Text id="track" color={"htbgreen"} weight="bold">
+          <Text id="track" color={"suprcuprcolor"} weight="bold">
             {`${track ?? ""} `.trim()}
           </Text>
-          <Text id="artist" color={!track ? "htbgreen" : undefined}>
+          <Text id="artist" color={!track ? "suprcuprcolor" : undefined}>
             {artist || "Nothing playing..."}
           </Text>
         </div>

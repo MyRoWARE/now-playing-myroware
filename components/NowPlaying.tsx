@@ -25,6 +25,7 @@ export const Player: React.FC<Props> = ({
         {`
             body {
               color: #ff0080;
+              font-size: 14px;
             }
 
             .paused { 
@@ -34,7 +35,7 @@ export const Player: React.FC<Props> = ({
 
             img:not([src]) {
               content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
-              background: #FFF;
+              background: transparent;
               border: 1px solid #a4b1cd;
             }
 
@@ -76,15 +77,16 @@ export const Player: React.FC<Props> = ({
             #track,
             #artist,
             #cover {
+              color: #ff0080;
               opacity: 0;
               animation: appear 300ms ease-out forwards;
-              color: #ff0080;
             }
 
             #track {
               animation-delay: 400ms;
             }
             #artist {
+              color: #ff0080;
               animation-delay: 500ms;
             }
             .progress-bar {
