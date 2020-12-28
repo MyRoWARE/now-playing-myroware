@@ -55,7 +55,7 @@ export const Track: React.FC<Props> = ({
         }}
       >
         <Text style={{ width: '16px', marginRight: '16px' }} size="large" weight="bold">{index}</Text>
-        <img id="cover" src={cover ?? null} width="48" height="48" />
+        <img id="cover" src={cover ?? null} width="60" height="60" />
         <div
           style={{
             display: "flex",
@@ -68,7 +68,7 @@ export const Track: React.FC<Props> = ({
           <Text id="track" color={"suprcuprcolor"} weight="bold">
             {`${track ?? ""} `.trim()}
           </Text>
-          <Text id="artist" color={!track ? "suprcuprcolor" : undefined}>
+          <Text id="artist" color={!track ? "suprcuprcolor" : undefined} style={{ color: "#ff0080" }}>
             {artist || "Nothing playing..."}
           </Text>
         </div>

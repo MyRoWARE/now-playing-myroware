@@ -25,7 +25,6 @@ export const Player: React.FC<Props> = ({
         {`
             body {
               color: #ff0080;
-              font-size: 14px;
             }
 
             .paused { 
@@ -146,7 +145,7 @@ export const Player: React.FC<Props> = ({
         }}
       >
         <Text style={{ width: '16px', marginRight: '16px' }} size="large" weight="bold">{ isPlaying ? '▶' : '' }</Text>
-        <img id="cover" src={cover ?? null} width="48" height="48" />
+        <img id="cover" src={cover ?? null} width="60" height="60" />
         <div
           style={{
             display: "flex",
@@ -156,10 +155,10 @@ export const Player: React.FC<Props> = ({
             marginLeft: 8,
           }}
         >
-          <Text id="track" weight="bold" color={"suprcuprcolor"}>
+          <Text id="track" size="large" weight="bold" color={"suprcuprcolor"}>
             {`${track ?? ""} `.trim()}
           </Text>
-          <Text id="artist" color={!track ? "suprcuprcolor" : undefined}>
+          <Text id="artist" size="default" color={!track ? "suprcuprcolor" : undefined}>
             {artist || "Nothing playing..."}
           </Text>
           {track && (
