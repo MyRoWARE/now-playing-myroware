@@ -23,6 +23,10 @@ export const Player: React.FC<Props> = ({
     <ReadmeImg width="540" height="64">
       <style>
         {`
+            body {
+              color: #ff0080;
+            }
+
             .paused { 
               animation-play-state: paused !important;
               background: #a4b1cd !important;
@@ -63,7 +67,7 @@ export const Player: React.FC<Props> = ({
               width: 100%;
               height: 6px;
               transform-origin: left center;
-              background-color: #9fef00;
+              background-color: #ff0080;
               animation: progress ${duration}ms linear;
               animation-delay: -${progress}ms;
             }
@@ -74,7 +78,7 @@ export const Player: React.FC<Props> = ({
             #cover {
               opacity: 0;
               animation: appear 300ms ease-out forwards;
-              color: #9fef00;
+              color: #ff0080;
             }
 
             #track {
@@ -150,10 +154,10 @@ export const Player: React.FC<Props> = ({
             marginLeft: 8,
           }}
         >
-          <Text id="track" weight="bold">
+          <Text id="track" weight="bold" color={"suprcuprcolor"}>
             {`${track ?? ""} `.trim()}
           </Text>
-          <Text id="artist" color={!track ? "htbgreen" : undefined}>
+          <Text id="artist" color={!track ? "suprcuprcolor" : undefined}>
             {artist || "Nothing playing..."}
           </Text>
           {track && (

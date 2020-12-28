@@ -11,7 +11,7 @@ const colors = {
   "gray-light": "#e1e4e8",
   gray: "#586069",
   "gray-dark": "#24292e",
-  htbgreen: "#9fef00",
+  suprcuprcolor: "#ff0080",
 };
 
 const families = {
