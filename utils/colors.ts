@@ -9,6 +9,7 @@ export const colors = {
   navy: "#2267CD",
   purple: "#8621D0",
   pink: "#FF8676",
+  htbgreen: "#9fef00",
   RAINBOW: "RAINBOW"
 };
 
